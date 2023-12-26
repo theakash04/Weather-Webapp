@@ -37,15 +37,19 @@ const tempUpdate = async() =>{
   //weather image changing condition
   if(weatherT === "Clear"){
     weatherImg.src = `resources/clear.png`;
+    app.setAttribute('style', 'background-color: #0071bd')
   }else if(weatherT === "Fog"){
     weatherImg.src = `resources/mist.png`;
+    app.setAttribute('style', 'background-color: #0071bd')
   }else if(weatherT === "Clouds"){
     weatherImg.src = `resources/clouds.png`;
+    app.setAttribute('style', 'background-color: #0071bd')
   }else if(weatherT === "Rain"){
     weatherImg.src = `resources/rain.png`;
     app.setAttribute('style', 'background-color: #000000d3');
   }else if(weatherT === "Drizzle"){
     weatherImg.src = `resources/drizzle.png`
+    app.setAttribute('style', 'background-color: #0071bd')
   }else if(weatherT === "Snow"){
     weatherImg.src = `resources/snow.png`
     app.setAttribute('style', 'background-color: #113f59')
