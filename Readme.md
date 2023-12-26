@@ -14,7 +14,7 @@ This Weather Web App is a simple and user-friendly application developed using H
 
 ## Live Preview
 
-You can try the Weather Web App [here](#). Follow the link to access the live version of the application.
+You can try the Weather Web App [here](https://weather-webapp-gray.vercel.app/). Follow the link to access the live version of the application.
 
 ## Technologies Used
 
