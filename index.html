@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="icon" href="resources/cloudy.png"/>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="style/general.css">
+  <link rel="stylesheet" href="style/mani.css">
+</head>
+<body>
+  <div class="app">
+    <div class="search">
+      <input type="text" placeholder="Enter city name" value="Delhi">
+      <button type="button"><i class='bx bx-search-alt'></i></button>
+    </div>
+    <div class="weatherDisplay">
+      <div class="interface">
+        <img class="weather" src="resources/clear.png">
+        <div class="details">
+          <div class="temp">--</div>
+          <div class="weather-text">----</div>
+          <div class="location-name">---</div>
+        </div>
+      </div>
+        <div class="last">
+
+          <div class="humidity">
+            <img src="resources/humidity.png">
+            <div class="text" id="humidity">
+              <span>0%</span>
+              <p>Humidity</p>
+            </div>
+          </div>
+
+          <div class="wind-speed">
+            <img src="resources/wind.png">
+            <div class="text" id="wind">
+              <span>0 km/h</span>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+
+        </div>
+    </div>
+    
+
+    <div class="error">
+      <span>city not found</span>
+    </div>
+  </div>
+
+  <script src="script/app.js"></script>
+</body>
+</html>
