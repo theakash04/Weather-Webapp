@@ -17,7 +17,6 @@ const tempUpdate = async() =>{
   let json = await code.json();
 
   //error in input city
-  console.log(code)
   if(code.status === 404 || cityName === ""){
     document.querySelector(".error").style.display = "flex";
     document.querySelector(".weatherDisplay").style.display = "none";
@@ -27,7 +26,7 @@ const tempUpdate = async() =>{
   }
 
   let temp = (json.main.temp) - 273.15; //converting the api temprature in celcius because it give in kelvin
-  console.log(url);
+
   //weather temprature change
   tempText.innerText = `${temp.toFixed(1)}°C`;
 
